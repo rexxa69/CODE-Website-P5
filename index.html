@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Tech - Renewable Energy Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Solar Tech</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Toggle Button -->
+    <div class="toggle-container">
+        <button class="toggle-btn" onclick="toggleText()">Show Info</button>
+    </div>
+
+    <!-- Hidden Text -->
+    <div class="hidden-text" id="hiddenText">
+        <h3 style="color: #e74c3c; margin-top: 0;">Project Details</h3>
+        <p><strong>Innovation:</strong> Sustainable energy solution combining solar technology with portable power storage.</p>
+        <p><strong>Features:</strong> High-efficiency solar panels, fast charging, weatherproof design.</p>
+        <p><strong>Goal:</strong> Providing clean energy access anywhere, anytime.</p>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="section-content">
+            <h1 class="fade-in">Rekayasa dan Teknologi</h1>
+            <p class="slide-left subtitle">Solarcell Powerbank</p>
+            <div style="margin-top: 6px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section" style="background: #f5f5f7;">
+        <div class="section-content">
+            <h2 class="fade-in">About Solar Technology</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Our mission is to revolutionize portable energy through innovative solar technology. We believe in creating sustainable solutions that protect our environment while providing reliable power for everyone.</p>
+            
+            <div class="product-grid">
+                <div class="product-card card-dark">
+                    <h3 style="color: #f5f5f7;">Solar Innovation</h3>
+                    <p style="color: #a1a1a6;">Harnessing the power of the sun for unlimited energy on the go.</p>
+                </div>
+                
+                <div class="product-card card-blue">
+                    <h3 style="color: white;">Portable Power</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Never run out of battery again with our advanced solar charging technology.</p>
+                </div>
+                
+                <div class="product-card">
+                    <h3>Eco-Friendly Design</h3>
+                    <p style="color: #86868b;">Sustainable technology that reduces your carbon footprint while keeping you connected.</p>
+                </div>
+                
+                <div class="product-card card-green">
+                    <h3 style="color: white;">Future Ready</h3>
+                    <p style="color: rgba(255,255,255,0.9);">Built for tomorrow's energy needs with today's cutting-edge innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="section-content">
+            <h2 class="fade-in">Our Solar Solutions</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Explore our range of solar-powered devices and see how they're helping protect the environment from battery waste.</p>
+            
+            <div class="product-carousel">
+                <div class="carousel-container" id="carouselContainer">
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&h=600&fit=crop');">
+                        <div class="carousel-content">
+                            <h3>High-Efficiency Solar Panels</h3>
+                            <p>Advanced photovoltaic technology that converts sunlight into clean energy with maximum efficiency. Our panels achieve up to 22% conversion rate.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&h=600&fit=crop');">
+                        <div class="carousel-content">
+                            <h3>Solar Powerbank Design</h3>
+                            <p>Compact, portable design that fits in your pocket while providing reliable solar charging capability. Never run out of power again.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1569163139394-de4e5f43e4e3?w=1200&h=600&fit=crop');">
+                        <div class="carousel-content">
+                            <h3>Environmental Protection</h3>
+                            <p>Reducing electronic waste and battery pollution through sustainable solar technology solutions. Join us in protecting our planet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1421091242698-34f6df677bdb?w=1200&h=600&fit=crop');">
+                        <div class="carousel-content">
+                            <h3>Clean Energy Future</h3>
+                            <p>Every solar device helps reduce carbon emissions and prevents toxic battery waste in landfills. Building a sustainable tomorrow.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop');">
+                        <div class="carousel-content">
+                            <h3>Fighting Battery Waste</h3>
+                            <p>Solar technology eliminates the need for disposable batteries, protecting soil and water from contamination. Make the switch today.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-nav prev" onclick="changeSlide(-1)">‹</button>
+                <button class="carousel-nav next" onclick="changeSlide(1)">›</button>
+                
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <span class="carousel-indicator active" onclick="goToSlide(0)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(1)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(2)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(3)"></span>
+                    <span class="carousel-indicator" onclick="goToSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section" style="background: #f5f5f7;">
+        <div class="section-content">
+            <h2 class="fade-in">Our Team</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Meet the passionate individuals behind our innovative solar technology solutions.</p>
+            
+            <div class="team-grid">
+                <div class="team-member stagger-item">
+                    <div class="team-avatar">A</div>
+                    <h3>Ataa</h3>
+                    <p style="color: #0066cc; font-weight: 600;">Project Manager</p>
+                    <p style="font-size: 16px;">Leading strategic planning and coordinating all aspects of our solar technology development projects.</p>
+                </div>
+                
+                <div class="team-member stagger-item">
+                    <div class="team-avatar">K</div>
+                    <h3>Kevin</h3>
+                    <p style="color: #0066cc; font-weight: 600;">Lead Engineer</p>
+                    <p style="font-size: 16px;">Designing and developing cutting-edge solar panel technology and power management systems.</p>
+                </div>
+                
+                <div class="team-member stagger-item">
+                    <div class="team-avatar">N</div>
+                    <h3>Nevlin</h3>
+                    <p style="color: #0066cc; font-weight: 600;">Design Specialist</p>
+                    <p style="font-size: 16px;">Creating user-friendly and aesthetically pleasing designs for our solar-powered devices.</p>
+                </div>
+                
+                <div class="team-member stagger-item">
+                    <div class="team-avatar">R</div>
+                    <h3>Razzan</h3>
+                    <p style="color: #0066cc; font-weight: 600;">Technical Analyst</p>
+                    <p style="font-size: 16px;">Analyzing performance data and optimizing solar technology efficiency and reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <h2 class="fade-in">Get In Touch</h2>
+            <p class="slide-left" style="max-width: 800px; margin: 0 auto 60px;">Ready to join the solar revolution? Contact us to learn more about our innovative solutions.</p>
+            
+            <div class="contact-info">
+                <div class="contact-card fade-in">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>info@solartech.com</p>
+                    <p>support@solartech.com</p>
+                </div>
+                
+                <div class="contact-card slide-left">
+                    <div class="contact-icon">📱</div>
+                    <h3>Instagram</h3>
+                    <p>@solartechofficial</p>
+                    <p>Follow us for updates</p>
+                </div>
+                
+                <div class="contact-card slide-right">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>+62 123 456 7890</p>
+                    <p>Available 24/7</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 40px; border-radius: 20px;">
+                <h2 class="scale-up" style="color: white;">♻️ Bukan Sekadar Powerbank…</h2>
+                <p class="fade-in" style="color: rgba(255,255,255,0.9); font-size: 24px;">Inilah saatnya kamu beralih ke energi pintar.
+Powerbank kami menggunakan baterai bekas yang diperbarui dan panel surya untuk pengisian—hemat, ramah lingkungan, dan siap pakai di mana saja.</p>
+                <p class="slide-up" style="color: white; font-size: 28px; font-weight: 600; margin-top: 40px;">🌞 Isi Tenaga dari Matahari.
+🔋 Selamatkan Bumi dengan Setiap Pengisian.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#products">Products</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="color: #86868b; font-size: 14px; margin: 0;">Terima Kasih.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
